@@ -1,0 +1,27 @@
+Language models learn by reading sequences of tokens and predicting the next token.
+During pretraining, the model does not understand language like a human.
+It learns statistical patterns from text.
+If the data contains repeated phrases, the model may memorize them.
+If the data is diverse and clean, the model can learn more useful patterns.
+
+A tokenizer converts raw text into token IDs.
+These IDs are numbers that the neural network can process.
+Byte Pair Encoding starts with small pieces of text and merges frequent pairs.
+This allows the tokenizer to represent common words using fewer tokens while still handling rare words.
+
+After tokenization, the dataset is packed into fixed length sequences.
+For example, if the sequence length is sixty four, each training sample needs sixty five tokens.
+The input tokens are all tokens except the last one.
+The target tokens are all tokens except the first one.
+The model sees the input and tries to predict the target.
+
+Training loss measures how wrong the model is when predicting the next token.
+At the beginning, the predictions are almost random.
+As training continues, the model adjusts its weights to make better predictions.
+Lower loss usually means the model is improving, although it does not always mean the model is useful.
+
+A small dataset is useful for testing the pipeline.
+A larger dataset is needed for meaningful training.
+With only a few tokens, the model cannot learn much.
+It only sees a tiny slice of language.
+To build a real training dataset, we need many documents, careful filtering, deduplication, and validation.
