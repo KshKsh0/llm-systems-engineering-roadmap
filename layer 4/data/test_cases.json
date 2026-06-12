@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TASK-001",
+    "category": "logic_trick",
+    "question": "A farmer has 15 sheep, and all but 8 die. How many sheep are left alive?",
+    "expected_answer": "8",
+    "explanation": "Tests if the model can bypass the urge to do 15-8 and just read the text literally."
+  },
+  {
+    "id": "TASK-002",
+    "category": "math_multi_step",
+    "question": "If a shirt halves in price every day, and it costs $100 on Monday, on which day will it first cost less than $5?",
+    "expected_answer": "Saturday",
+    "explanation": "Tests if the model can correctly step through days and math, and gives the tool pipeline a chance to trigger a calculation."
+  }
+]
