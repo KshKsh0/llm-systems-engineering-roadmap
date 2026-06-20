@@ -1,0 +1,12 @@
+# Core Deep Learning Stack (Windows Patched Version)
+torch==2.4.1
+
+# Hugging Face Ecosystem (Pinned for Compatibility)
+transformers==4.41.0
+accelerate==1.1.1
+
+# Quantization Backend
+bitsandbytes==0.49.2
+
+# UI & Formatting
+rich==13.7.1
